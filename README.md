@@ -1,3 +1,7 @@
+## Config readme
+
+Adding ways to access things because I always forget how to
+
 ### Modify ZSH
 
 ```
