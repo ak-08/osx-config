@@ -1,0 +1,37 @@
+{
+  "workbench.activityBar.visible": true,
+  "editor.fontFamily": "Fira Code, Menlo",
+  "editor.fontLigatures": true,
+  "eslint.autoFixOnSave": true,
+  "workbench.sideBar.location": "left",
+  "workbench.statusBar.visible": true,
+  "editor.minimap.enabled": false,
+  "terminal.integrated.fontSize": 12,
+  "gitlens.advanced.messages": {
+    "suppressShowKeyBindingsNotice": true
+  },
+  "gitlens.historyExplorer.enabled": true,
+  "editor.tabSize": 2,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "gitlens.gitExplorer.files.layout": "list",
+  "terminal.integrated.fontFamily": "monospace",
+  "breadcrumbs.enabled": true,
+  "workbench.startupEditor": "welcomePage",
+  "workbench.colorTheme": "Darcula",
+  "workbench.iconTheme": "material-icon-theme",
+  "gitlens.views.repositories.files.layout": "list",
+  "gitlens.views.fileHistory.enabled": true,
+  "gitlens.views.lineHistory.enabled": true,
+  "window.zoomLevel": 0,
+  "git.autofetch": true,
+  "files.autoSave": "onFocusChange",
+  "editor.formatOnSave": true,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "terminal.integrated.rendererType": "dom"
+}
