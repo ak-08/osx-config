@@ -18,6 +18,10 @@
 5. Terminal 
  -  Install `port` (https://guide.macports.org/chunked/installing.macports.html)
 
+6. Install Oh my ZSH
+```
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+```
 
 
  ## Questions
