@@ -18,7 +18,11 @@
 5. Terminal 
  -  Install `port` (https://guide.macports.org/chunked/installing.macports.html)
 
-
+6. Install firacode 
+``` 
+brew tap homebrew/cask-fonts
+brew cask install font-fira-code
+```
 
  ## Questions
 
