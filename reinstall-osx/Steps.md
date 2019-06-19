@@ -13,15 +13,18 @@
     - postico
     - postgres
     - spotify
+    - Logitech Options (if you're still using Master MX)
 ```
 
-5. Terminal 
+5. Configure Terminal 
  -  Install `port` (https://guide.macports.org/chunked/installing.macports.html)
 
-6. Install Oh my ZSH
+ - Install Oh my ZSH
 ```
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
+ - Add config from `terminal` folder in ~/.zshrc
+ - Check if theme and shortcuts are working through terminal
 
 
  ## Questions
