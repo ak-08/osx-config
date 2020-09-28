@@ -1,6 +1,10 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/ashishk/.oh-my-zsh"
 
@@ -62,7 +66,7 @@ ZSH_THEME="aussiegeek"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git
+  git zsh-z
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -93,8 +97,8 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+alias zshconfig="vim ~/.zshrc"
+alias ohmyzsh="vim ~/.oh-my-zsh"
 
 # tabtab source for serverless package
 # uninstall by removing these lines or running `tabtab uninstall serverless`
@@ -103,10 +107,9 @@ source $ZSH/oh-my-zsh.sh
 # uninstall by removing these lines or running `tabtab uninstall sls`
 [[ -f /AK/Repositories/cd-projection-pipeline/src/serverless/node_modules/tabtab/.completions/sls.zsh ]] && . /AK/Repositories/cd-projection-pipeline/src/serverless/node_modules/tabtab/.completions/sls.zsh
 
-# Seek learning aliases
-alias skauth='/AK/Repositories/aws-auth-saml-linux-osx-bash/auth.sh'
-
-# thanks ED :D 
+# My own aliases
+alias skauth='/Users/ashishk/AK/Repositories/seek/aws-auth-saml-linux-osx-bash/auth.sh'
+alias gantry='/Users/ashishk/AK/Repositories/gantry/gantry.sh'
 
 # npm
 alias npi='npm install'
@@ -119,8 +122,10 @@ alias ...="cd ../../"
 alias ....="cd ../../../"
 alias c="cd ~/"
 alias d="cd ~/Desktop"
-alias r="cd /AK/Repositories"
+alias r="cd /Users/ashishk/AK/Repositories/indirect-enablement"
 alias pr="cd /AK/Personal_Repositories"
+
+alias jp="jupyter notebook"
 
 k() {
   # clear the console via terminal
@@ -162,6 +167,8 @@ alias gcam='git commit -a -m'
 alias gs='git status -sb'
 alias gcb='git copy-branch-name'
 alias gm='git merge'
+alias gr='git branch | grep -v "master" | xargs git branch -D'
+
 
 git_ignore_locally() {
   git update-index --assume-unchanged $1;
@@ -170,3 +177,28 @@ git_ignore_locally() {
 git_find_in_history() {
   git log --all --full-history -- $1
 }
+
+# tabtab source for slss package
+# uninstall by removing these lines or running `tabtab uninstall slss`
+[[ -f /AK/Repositories/cd-projection-pipeline/src/serverless/node_modules/tabtab/.completions/slss.zsh ]] && . /AK/Repositories/cd-projection-pipeline/src/serverless/node_modules/tabtab/.completions/slss.zsh
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH:/Users/ashishk/.dotnet/tools"
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/ashishk/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/ashishk/opt/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/ashishk/opt/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/ashishk/opt/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
