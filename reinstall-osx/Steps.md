@@ -1,4 +1,7 @@
-1. Install Chrome
+1. Install homebrew 
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+```
 2. Install Drive Back up and Sync
 3. Install the following from App Store:
 ```
@@ -39,5 +42,13 @@ Add SSH key to github account -> https://docs.github.com/en/free-pro-team@latest
 https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-mac.html
 ```
 
+10. Install yarn & jest globally (only if this is a dev machine)
+```
+1. brew install yarn 
+
+(This install NodeJs too, if you use NVM, then first install NVM and update the path, google more on this)
+
+2. yarn global add jest
+```
 
  
