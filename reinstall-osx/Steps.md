@@ -49,6 +49,8 @@ https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-mac.html
 (This install NodeJs too, if you use NVM, then first install NVM and update the path, google more on this)
 
 2. yarn global add jest
+
+3. login to npm - run 'npm login' on the terminal 
 ```
 
  
